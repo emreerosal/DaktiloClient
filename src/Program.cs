@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Windows.Forms;
 
@@ -13,16 +13,16 @@ namespace RemoteDaktilo
 			{
 				if (!(args[0] == "--self-test"))
 				{
-					if (!(args[0] == "--usb-self-test"))
+					if (!(args[0] == "--usb-self-test" || args[0] == "--power-self-test"))
 					{
 						goto IL_0065;
 					}
 				}
 				try
 				{
-					if (args[0] == "--usb-self-test")
+					if (args[0] == "--usb-self-test" || args[0] == "--power-self-test")
 					{
-						UsbBridge.Test();
+						if(args[0]=="--power-self-test")MrDaktilo.Startup.KeepAwake.Test();else UsbBridge.Test();
 					}
 					else
 					{
@@ -71,9 +71,10 @@ namespace RemoteDaktilo
 				}
 				return;
 			}
-			Application.Run(new App(false));
+			using(var app=new App(false))MrDaktilo.Startup.KeepAwake.Run(app);
 		}
 
 		public const bool ClientMode = true;
 	}
 }
+
