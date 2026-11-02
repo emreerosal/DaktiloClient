@@ -1,0 +1,57 @@
+name: Client source build
+on:
+  push:
+    branches: [main]
+    tags: ['client-v*']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Client only
+        shell: pwsh
+        run: ./build.ps1
+      - name: Run safe loopback and UI tests
+        shell: pwsh
+        run: ./scripts/test.ps1
+      - name: Upload unsigned Client only
+        id: unsigned
+        uses: actions/upload-artifact@v7
+        with:
+          name: DaktiloClient-unsigned
+          path: artifacts/DaktiloClient.exe
+          if-no-files-found: error
+      - name: Request approved Client signing
+        if: startsWith(github.ref, 'refs/tags/client-v') && vars.ENABLE_SIGNPATH == 'true'
+        uses: signpath/github-action-submit-signing-request@v3
+        with:
+          api-token: ${{ secrets.SIGNPATH_API_TOKEN }}
+          organization-id: ${{ vars.SIGNPATH_ORGANIZATION_ID }}
+          project-slug: ${{ vars.SIGNPATH_PROJECT_SLUG }}
+          signing-policy-slug: ${{ vars.SIGNPATH_SIGNING_POLICY_SLUG }}
+          github-artifact-id: ${{ steps.unsigned.outputs.artifact-id }}
+          wait-for-completion: true
+          wait-for-completion-timeout-in-seconds: 3600
+          output-artifact-directory: signed
+      - name: Validate returned Client signature
+        if: startsWith(github.ref, 'refs/tags/client-v') && vars.ENABLE_SIGNPATH == 'true'
+        shell: pwsh
+        run: |
+          $files=@(Get-ChildItem -LiteralPath signed -Recurse -Filter '*.exe')
+          if($files.Count -ne 1 -or $files[0].Name -ne 'DaktiloClient.exe'){throw 'Unexpected signed artifact'}
+          if((Get-AuthenticodeSignature -LiteralPath $files[0].FullName).Status -ne 'Valid'){throw 'Invalid returned signature'}
+      - name: Upload signed Client only
+        if: startsWith(github.ref, 'refs/tags/client-v') && vars.ENABLE_SIGNPATH == 'true'
+        uses: actions/upload-artifact@v7
+        with:
+          name: DaktiloClient-signed
+          path: signed/**/DaktiloClient.exe
+          if-no-files-found: error
+
+
