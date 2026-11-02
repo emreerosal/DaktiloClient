@@ -12,7 +12,7 @@ GitHub maintainer, committer and reviewer: [emreerosal](https://github.com/emree
 
 ## Build origin and artifact restrictions
 
-The GitHub-hosted Windows workflow builds from checked-out source, runs the Client tests and uploads only artifacts/DaktiloClient.exe. SignPath must be configured to trust this repository/workflow and require ProductName DaktiloClient, FileDescription DaktiloClient and matching ProductVersion/FileVersion1.1.0.0. Its artifact configuration must reject extra artifacts and retain the original upstream signature on the embedded MSI. Change the version and matching checks together for each release.
+The GitHub-hosted Windows workflow builds from checked-out source, runs the Client tests and uploads only artifacts/DaktiloClient.exe. SignPath must be configured to trust this repository/workflow and require ProductName DaktiloClient, FileDescription DaktiloClient and matching ProductVersion/FileVersion1.2.0.0. Its artifact configuration must reject extra artifacts and retain the original upstream signature on the embedded MSI. Change the version and matching checks together for each release.
 
 ENABLE_SIGNPATH defaults to absent/false. Only approved client-v tags may request signing; pull requests and ordinary builds cannot. Do not add the API token to source or distribute it. A successful local build is unsigned and must never be described as signed. Returned signatures are validated before the signed artifact is uploaded.
 
@@ -22,4 +22,5 @@ Privacy: see PRIVACY.md. The Client contacts the specified relay on launch and t
 
 Provider terms: https://signpath.org/terms.html
 Workflow documentation: https://docs.signpath.io/trusted-build-systems/github
+
 

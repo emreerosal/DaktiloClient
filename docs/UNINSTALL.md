@@ -13,3 +13,6 @@ To remove USB components that were installed for this application:
 5. Installer files/logs may remain in MRDaktilo-USB-* temporary directories. Review and delete only the specific setup directory once installation has completed; do not remove arbitrary temporary folders.
 
 Stop in the app terminates its tunnel; it does not promise removal of independently installed USB services, drivers, firewall rules or bindings. Documentation is provided instead of an automatic destructive cleanup action.
+
+While running, Client uses SetThreadExecutionState to prevent automatic idle sleep/display timeout. This is not a persistent power-policy change and is released on normal exit or thread termination. Closing the Client restores ordinary idle behavior. Manual sleep/lid and critical battery actions remain controlled by Windows.
+
