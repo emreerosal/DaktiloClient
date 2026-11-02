@@ -26,8 +26,8 @@
   },
   {
     "path": "docs/CODE_SIGNING_POLICY.md",
-    "sha256": "cd774ec2fc43b4950ebcdb741e4dd8df1dab4198da018ce55e610eefd3c632f4",
-    "bytes": 2508
+    "sha256": "5c97cd2f0f9097e71d4c79a284288127d7864f32e927965e7d4589dbc8c56d18",
+    "bytes": 2510
   },
   {
     "path": "docs/DEPENDENCIES.md",
@@ -56,8 +56,8 @@
   },
   {
     "path": "docs/UNINSTALL.md",
-    "sha256": "e83113ba2f44d030f3126dddf07353011e6b769f367842db7bf85a70be16db0b",
-    "bytes": 1940
+    "sha256": "538dee39083cce4faa41f349ec0a06f6ca3805fc52b6c513790e5d662c8f3090",
+    "bytes": 2270
   },
   {
     "path": "LICENSE",
@@ -66,13 +66,13 @@
   },
   {
     "path": "README.md",
-    "sha256": "a75d8119978b38c853ca318bba3b8ae44aa2da9ba3182acc5293cda332372865",
-    "bytes": 3785
+    "sha256": "9a8c9d9bf0bf78f6c396f82e4e04cffb3b4fd5ea9f38288c3e6bb8c44a331eb2",
+    "bytes": 4204
   },
   {
     "path": "scripts/test.ps1",
-    "sha256": "236c2fe690cab04d9dc88662623f675a9dd00902088d00a67248ad9275e618b7",
-    "bytes": 1610
+    "sha256": "3095a6477038556a7c50ab67470a679578d2bc661a7bb7d4082bf490505572e1",
+    "bytes": 1634
   },
   {
     "path": "src/ActionButton.cs",
@@ -91,8 +91,8 @@
   },
   {
     "path": "src/AssemblyInfo.cs",
-    "sha256": "a3c81b0ddf0a38c26365e59c1587729b91f2377362d29fabeadfa7b8167a3cd2",
-    "bytes": 472
+    "sha256": "7ada0b13c44141fa2e8356c28e28046faaaf701c19d2b9d4c6f704380c2bef1e",
+    "bytes": 474
   },
   {
     "path": "src/AutoUsb.cs",
@@ -130,9 +130,14 @@
     "bytes": 17836
   },
   {
+    "path": "src/KeepAwake.cs",
+    "sha256": "c7b6a6efbc2947ae32a245f8a98fd6ab752de18851e1dbf28417a5be1b6d2573",
+    "bytes": 2161
+  },
+  {
     "path": "src/Program.cs",
-    "sha256": "046d8bd50f53d6877863a3edb4a05bd92f2d3169026807bb805ca69c0968737c",
-    "bytes": 1494
+    "sha256": "8ebbd84d7eb4b75fa1605234521b6fa88aa21bde0e3e2f6af4d53a47b1d0d787",
+    "bytes": 1667
   },
   {
     "path": "src/StatusOrb.cs",

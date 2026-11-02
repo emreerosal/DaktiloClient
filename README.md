@@ -1,6 +1,6 @@
 # DaktiloClient
 
-Portable Windows x64 remote-support **host** client. Source release1.1.0. The source in this repository builds DaktiloClient.exe directly with the .NET Framework compiler. No existing application EXE, decompiler, IL patcher or proprietary build tool is required to build it.
+Portable Windows x64 remote-support **host** client. Source release1.2.0. The source in this repository builds DaktiloClient.exe directly with the .NET Framework compiler. No existing application EXE, decompiler, IL patcher or proprietary build tool is required to build it.
 
 ## Scope
 
@@ -36,4 +36,9 @@ See [Code signing policy](docs/CODE_SIGNING_POLICY.md). **Status: application pr
 Publish only this directory as its own public repository. Do not upload a parent workspace or its private history. Add the actual maintainer/reviewer/approver identities, official homepage, service operator contact and public issue URL before applying. Use [application checklist](docs/SIGNPATH_APPLICATION.md). The other application and server deployment files are not part of this repository.
 
 Source files reconstructed from the project's own Client binary are identified in docs/PROVENANCE.md. All build inputs are included; tests verify product metadata, absence of receiver UI classes and preservation of the original logo. This is a source-build release, not a claim of byte-identical reproduction of an earlier compiler output.
+
+
+
+## Power behavior
+While the normal Client window is open, a thread-scoped Windows execution request prevents automatic idle sleep and display timeout. It is released on close; power-plan settings are not changed. Manual sleep, lid actions, critical battery behavior and system policy can still suspend the computer. Preview/test modes do not hold the request. The power self-test acquires and releases it briefly.
 
