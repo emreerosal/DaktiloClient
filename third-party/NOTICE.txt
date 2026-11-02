@@ -1,0 +1,6 @@
+DaktiloClient USB host component
+usbipd-win 5.3.0, original upstream x64 MSI, SHA256 1C984914AEC944DE19B64EFF232421439629699F8138E3DDC29301175BC6D938.
+Source: https://github.com/dorssel/usbipd-win/tree/v5.3.0
+License: GPL-3.0-only and the upstream distribution's third-party notices.
+The unmodified MSI and corresponding source archive are included. The MSI is run as a separate process; its signature is not replaced.
+The main Client uses Windows/.NET system libraries. Driver installation requires Windows administrator approval.
