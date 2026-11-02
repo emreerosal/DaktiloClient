@@ -1,0 +1,187 @@
+[
+  {
+    "path": ".github/workflows/client.yml",
+    "sha256": "a4e5add7447c0a8afac10635a1c862a41c7f9baf5611290a5b713483782f561e",
+    "bytes": 2160
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "155bf3e5121839759fa831fa7c64100a559250edf07561fa03cb321fbb4185cf",
+    "bytes": 55
+  },
+  {
+    "path": "assets/client.ico",
+    "sha256": "aa5b609168036eb78ecb2f0582615a17f8dcd66d8035a6525dc3c63480ce8fe8",
+    "bytes": 47346
+  },
+  {
+    "path": "assets/logo.png",
+    "sha256": "050f6696dd4e50a46ced0d954164cf29ed09f316eba25953ec8fb24f0669119a",
+    "bytes": 1744448
+  },
+  {
+    "path": "build.ps1",
+    "sha256": "0b44633c35be4cc24371808eedc66c8a9bee9a6db71dd906a438747566e4a0c2",
+    "bytes": 1262
+  },
+  {
+    "path": "docs/CODE_SIGNING_POLICY.md",
+    "sha256": "cd774ec2fc43b4950ebcdb741e4dd8df1dab4198da018ce55e610eefd3c632f4",
+    "bytes": 2508
+  },
+  {
+    "path": "docs/DEPENDENCIES.md",
+    "sha256": "fde63b5c95b123d02cebde09a84c8ab4a2bf77adc5dca849bff11e88192f6072",
+    "bytes": 1277
+  },
+  {
+    "path": "docs/DOWNLOAD_PAGE.md",
+    "sha256": "67177dc21cff1efdde1eac6267e9c0b74ebaabb30f2f05a17e032b7bbfb08523",
+    "bytes": 1294
+  },
+  {
+    "path": "docs/PRIVACY.md",
+    "sha256": "5862d7ac4822d04180851ad1e352495df89e77c942f35831413b9c72987ad205",
+    "bytes": 1912
+  },
+  {
+    "path": "docs/PROVENANCE.md",
+    "sha256": "00c05e430551b4c27d0f19dcb844e7763971270254a314d042366081a1ab077f",
+    "bytes": 1620
+  },
+  {
+    "path": "docs/SIGNPATH_APPLICATION.md",
+    "sha256": "fb55f210113c05861af4de195ed21353894f43dbd03e77dfecb1d73bc787d29b",
+    "bytes": 2726
+  },
+  {
+    "path": "docs/UNINSTALL.md",
+    "sha256": "e83113ba2f44d030f3126dddf07353011e6b769f367842db7bf85a70be16db0b",
+    "bytes": 1940
+  },
+  {
+    "path": "LICENSE",
+    "sha256": "e4ca3f72e5ce75f3ed03e49c3a5301bf78d51986e4a9752889d1145d372538e8",
+    "bytes": 1084
+  },
+  {
+    "path": "README.md",
+    "sha256": "a75d8119978b38c853ca318bba3b8ae44aa2da9ba3182acc5293cda332372865",
+    "bytes": 3785
+  },
+  {
+    "path": "scripts/test.ps1",
+    "sha256": "236c2fe690cab04d9dc88662623f675a9dd00902088d00a67248ad9275e618b7",
+    "bytes": 1610
+  },
+  {
+    "path": "src/ActionButton.cs",
+    "sha256": "7da85a46f7b3e0663db9e557041d9c51052a2d24aab1aaf03f69439626435af9",
+    "bytes": 2610
+  },
+  {
+    "path": "src/AdaptiveCapture.cs",
+    "sha256": "256f5b4e8e9f3a9bdcc5ef45cdc66c556c555313a8ef41859ddcfd832140c5c3",
+    "bytes": 12899
+  },
+  {
+    "path": "src/App.cs",
+    "sha256": "ba0f73bae325cb1dcc1d8c95e7cb42fc0a4cc2982a360ed2098b8ca64f745f89",
+    "bytes": 24471
+  },
+  {
+    "path": "src/AssemblyInfo.cs",
+    "sha256": "a3c81b0ddf0a38c26365e59c1587729b91f2377362d29fabeadfa7b8167a3cd2",
+    "bytes": 472
+  },
+  {
+    "path": "src/AutoUsb.cs",
+    "sha256": "da468a4207dfe6591a6f90135bfb66b9d23781e12c9e745cd155ae4eff5ac7b6",
+    "bytes": 7905
+  },
+  {
+    "path": "src/Brand.cs",
+    "sha256": "cced02325921c75132721e5e3fb559fea99c0066ef071ee8ccb6d2d4427e7648",
+    "bytes": 2947
+  },
+  {
+    "path": "src/BrandToggle.cs",
+    "sha256": "72a3daa139d7acdbfe36098be526d644c8719992ac216912b369defc6c686536",
+    "bytes": 1677
+  },
+  {
+    "path": "src/Card.cs",
+    "sha256": "379804cd9f41bba4bad3970615925c28eb4f76dd60afae9825f630071110d06d",
+    "bytes": 1006
+  },
+  {
+    "path": "src/Channel.cs",
+    "sha256": "29681cbbdd2b0b99c1d46cd99b2f4d5e48bc7dbcd2698c1414ee0c75188d66f3",
+    "bytes": 8112
+  },
+  {
+    "path": "src/FileFeature.cs",
+    "sha256": "5c67130cf7588ef44692fde00d192adfba11431b5c35586fb2fc96d2f062d3c8",
+    "bytes": 2218
+  },
+  {
+    "path": "src/FileSession.cs",
+    "sha256": "ee84043db26e6698e85e2f2430b4940374c76981053605bed3bb7746dd663446",
+    "bytes": 17836
+  },
+  {
+    "path": "src/Program.cs",
+    "sha256": "046d8bd50f53d6877863a3edb4a05bd92f2d3169026807bb805ca69c0968737c",
+    "bytes": 1494
+  },
+  {
+    "path": "src/StatusOrb.cs",
+    "sha256": "74e9c88cc74fa2bc53a354d735252f1b44227c1e663e239165579f795fb60f55",
+    "bytes": 2153
+  },
+  {
+    "path": "src/Transport.cs",
+    "sha256": "4f3476a17ffa27c28ab7313cbb34940cf48e342b4a929330d19df7a076906124",
+    "bytes": 13974
+  },
+  {
+    "path": "src/UsbBridge.cs",
+    "sha256": "544a2371da94209b1927247e79dbd0c04c88e1dd89355a42ff1be5a7401d5f6d",
+    "bytes": 11822
+  },
+  {
+    "path": "src/UsbFlow.cs",
+    "sha256": "a355d18162c6388d8e8dfdbe47afc201f1965be9944007012b301dfdde00f98c",
+    "bytes": 8338
+  },
+  {
+    "path": "third-party/COPYING.md",
+    "sha256": "33bc26d4498c183b703d1760ee45b8774d21d6e0178ca393dc715271840c7a21",
+    "bytes": 34916
+  },
+  {
+    "path": "third-party/DRIVERS-README.md",
+    "sha256": "50e74d938e31fe0fa9c2e7a73d8440bcca8e9668aded2c36b5160ea1aa79863a",
+    "bytes": 557
+  },
+  {
+    "path": "third-party/GPL-3.0.txt",
+    "sha256": "fb981668c18a279e285fc4d83fba1e836cc84dd4daa73c9697d3cfd2d8aca6e0",
+    "bytes": 34674
+  },
+  {
+    "path": "third-party/NOTICE.txt",
+    "sha256": "64472cd204e505310a3091c4220bb1463b13f20ea83e20e56aecdb6b53126a19",
+    "bytes": 533
+  },
+  {
+    "path": "third-party/usbipd-source.tar.gz",
+    "sha256": "3cf82ceef2fc71b0228efb5ab9605c570b09483d64caf22aaf3017d725475021",
+    "bytes": 1279095
+  },
+  {
+    "path": "third-party/usbipd.msi",
+    "sha256": "1c984914aec944de19b64eff232421439629699f8138e3ddc29301175bc6d938",
+    "bytes": 4501504
+  }
+]

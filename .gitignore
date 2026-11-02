@@ -1,0 +1,8 @@
+artifacts/
+signed/
+*.pdb
+*.log
+*.pfx
+*.p12
+*.key
+.env
